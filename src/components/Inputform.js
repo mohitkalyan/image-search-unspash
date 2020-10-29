@@ -15,7 +15,7 @@ class Input extends React.Component {
 
   render() {
     return (
-      <div className="centre top">
+      <div className="centre top bottom">
       <form >
         <div className="ui action input ">
           <input

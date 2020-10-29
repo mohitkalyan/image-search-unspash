@@ -1,9 +1,14 @@
 div.centre{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .top{
     padding-top: 2rem;
+}
+
+.bottom {
+    padding-bottom: 2rem;
 }
