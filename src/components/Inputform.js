@@ -24,7 +24,7 @@ class Input extends React.Component {
             placeholder="Search..."
             onChange={this.onInputChange}
           />
-          <button onClick={this.onSearchSubmit} className="ui button">Search</button>
+          <button onClick={this.onSearchSubmit} className="ui button">Search imgs..</button>
         </div>
         </form>
       </div>

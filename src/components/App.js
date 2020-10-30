@@ -4,12 +4,14 @@ import axios from "./api/unsplash";
 import ImageList from "./ImageList";
 
 class App extends React.Component {
-  state = { img: [] };
+  state = { img: []};
 
   onSearchSubmit = async (term) => {
     const response = await axios.get("/search/photos", {
-      params: { query: term },
+      params: { query: term, per_page: 30, page : 1 }     //,per_page: 30, page : 1
     });
+
+    console.log(response);
 
     this.setState({ img: response.data.results });
   };
