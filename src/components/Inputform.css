@@ -1,15 +1,15 @@
-div.centre{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+div.centre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.top{
-    padding-top: 2rem;
+.top {
+  padding-top: 2rem;
 }
 
 .bottom {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }

@@ -6,26 +6,28 @@ class Input extends React.Component {
 
   onInputChange = (e) => {
     this.setState({ text: e.target.value });
-  }
+  };
 
-  onSearchSubmit = (e)=>{
+  onSearchSubmit = (e) => {
     e.preventDefault();
-    this.props.onSubmit(this.state.text);  
-}
+    this.props.onSubmit(this.state.text);
+  };
 
   render() {
     return (
       <div className="centre top bottom">
-      <form >
-        <div className="ui action input ">
-          <input
-            type="text"
-            value = {this.state.text}
-            placeholder="Search..."
-            onChange={this.onInputChange}
-          />
-          <button onClick={this.onSearchSubmit} className="ui button">Search imgs..</button>
-        </div>
+        <form>
+          <div className="ui action input ">
+            <input
+              type="text"
+              value={this.state.text}
+              placeholder="Search..."
+              onChange={this.onInputChange}
+            />
+            <button onClick={this.onSearchSubmit} className="ui button">
+              Search imgs..
+            </button>
+          </div>
         </form>
       </div>
     );
